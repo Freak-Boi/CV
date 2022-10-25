@@ -1,0 +1,25 @@
+#title{
+    background-color: rgba(81, 176, 231, 0.712);
+}
+
+.container-fluid{
+    padding:3% 15% !important;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.custom-image{
+  
+    animation: dancingImage 5s ease-in-out  infinite  ;
+}
+
+@keyframes dancingImage {
+    
+    0%   {transform: rotate(45deg);}
+    50%  {transform: rotate(-45deg);}
+    100% {transform: rotate(45deg);}
+}
