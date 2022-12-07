@@ -2,17 +2,168 @@
     background-color: rgba(81, 176, 231, 0.712);
 }
 
+body {
+    font-family: "Montserrat" !important; 
+    user-select: none !important;
+}
+
 .container-fluid{
-    padding:3% 15% !important;
+    padding:3% 15% 7%!important;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    color:#fff;
     font-size: 3rem;
     line-height: 1.5;
 }
 
-.custom-image{
+
+i{
+    padding-right:5px;
+}
+
+
+
+/* navigation Bar */
+
+.navbar{
+    padding:0 0 4.5rem !important;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem !important;
+    font-weight: bold;
+}
+
+
+/* Downlad button */
+.downloadButton{ 
+    margin:5% 3% 5% 0;
+    border: 1px solid rgb(27, 136, 187) !important;
+}
+
+.custom-image{ 
+    width:50%;
+    transform: rotate(25deg);
+    margin-left: 10%;
+    position: absolute;
+    right:30%;
+    
+}
+
+#features{
+    text-align: center;
+    padding: 5%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.icon{
+    padding-bottom: 10%;
+    color: rgba(81, 176, 231, 0.712)
+}
+
+.icon:hover{
+    color: rgba(40, 141, 199, 0.712)
+}
+
+p{
+    color: grey;
+}
+
+h3{
+    font-family:  'Montserrat', sans-serif !important;
+}
+
+/* testimonials */
+#testimonials{
+   
+    text-align:center;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: rgb(81, 176, 231, 0.712);
+}
+
+.carousel-item{
+    padding:7% 15%;
+}
+
+.testimonials_image{
+    width:15%;
+    border-radius:100%;
+    margin: 20px;
+
+}
+
+#press{
+    background-color: rgb(81, 176, 231, 0.712);
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-image{ 
+    width:15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing{
+    padding:100px;
+    text-align: center;
+}
+
+.pricing-column{
+    padding:3% 2%;
+}
+
+
+#cta{
+    background-color: rgba(81, 176, 231, 0.712);
+    color: #fff;
+    text-align: center;
+    padding:7% 15%; 
+
+}
+
+/* footer */
+#footer{
+    background-color: #fff;
+    text-align: center;
+    padding:5% 0;
+}
+
+.application-image{
+    background-color: transparent !important;
+     border:unset;     /* this is used when i used button instead of icon */
+    padding-bottom: 2%;
+}
+
+/* adding media queries to make website more responsive */
+@media (max-width:1028px) {
+
+    #title{
+        text-align: center;
+    }
+    .custom-image{  
+        
+        position:static;
+        transform:rotate(0)
+    }
+
+}
+
+/* .custom-image{  this code is used to animate the image
   
     animation: dancingImage 5s ease-in-out  infinite  ;
 }
@@ -22,4 +173,4 @@ h1{
     0%   {transform: rotate(45deg);}
     50%  {transform: rotate(-45deg);}
     100% {transform: rotate(45deg);}
-}
+} */
